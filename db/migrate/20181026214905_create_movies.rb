@@ -1,7 +1,7 @@
 class CreateMovies < ActiveRecord::Migration[5.2]
   def change
     create_table :movies do |t|
-      t.boolean :highlighted, default: false 
+      t.boolean :highlighted, default: false #escolher qual capa vai estar em destaque.
       t.string :title
       t.text :description
       t.string :thumbnail_key

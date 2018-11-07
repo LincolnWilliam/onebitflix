@@ -2,7 +2,7 @@ class CreateSeries < ActiveRecord::Migration[5.2]
   def change
     create_table :series do |t|
       #deixar como imagem principal ,capa highlighted.
-      t.boolean :highlighted, default: false
+      t.boolean :highlighted, default: false 
       t.string :title
       t.text :description
       t.string :thumbnail_key
