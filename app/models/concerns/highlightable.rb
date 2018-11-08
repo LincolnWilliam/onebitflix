@@ -1,6 +1,6 @@
 module Highlightable
   extend ActiveSupport::Concern
-
+  # verifica se tem mais de um filme como capa, highlight(em destaque)
    included do 
      validate :single_highlight
    
