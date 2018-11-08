@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       #metodo http get pegar informações do dashboards. // relaciona
-      det '/dashboard', to: 'dashboards#index', as: 'dashboard'
+      get '/dashboard', to: 'dashboards#index', as: 'dashboard'
       # resources maneira de gerar varias rotas, 
       # favorites relacionando - renomeando para my_list ,
       resources :favorites, path: "my_list", only: %i( index create )
