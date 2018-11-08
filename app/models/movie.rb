@@ -1,4 +1,5 @@
 class Movie < ApplicationRecord
+  include Highlightable
   include PgSearch
   # um epsodio que faça parte de uma série ele nao deve ser pesquisado,
   multsearchable against: [:title], if: lambda{ |record| record.serie.nil? }
