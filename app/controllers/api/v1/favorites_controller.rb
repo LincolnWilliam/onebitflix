@@ -1,5 +1,5 @@
 class Api::V1::FavoritesController < ApplicationController
-  before_action :set_favorite, only: :destroy # se_favorite rode antes somente de destroy
+  before_action :set_favorite, only: :destroy # set_favorite rode antes somente de destroy
    # metodos chamados de actions 
 
    def index  #devolver todos os filmes e series que a gente escolheu
